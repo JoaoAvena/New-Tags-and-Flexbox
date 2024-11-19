@@ -1,0 +1,103 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    border: 1px solid #ccc;
+    background: #f2f2f2;
+    padding: 10px;
+}
+
+nav{
+    border: 1px solid green;
+    background: #f2f2f2;
+    padding: 10px;
+}
+
+footer{
+    background: #ccc;
+}
+
+article{
+    background: orange;
+    padding: 10px;
+}
+
+section{
+    border: 1px dotted white;
+}
+
+aside{
+    background: blue;
+    color: white;
+    padding: 10px;
+}
+
+.Inputs{
+    background: #ccc;
+    padding: 10px;
+}
+
+/* Flexbox Configs */
+
+#conteudo{
+    background: #dcdcdc;
+    height: 600px;
+    display: flex;
+}
+
+    /*  Atributos do flex-direction 
+row|row-reverse|column|column-reverse 
+        Atributos do flex-wrap 
+nowrap|wrap|wrap-reverse 
+        Atributos do justify-content 
+flex-start|flex-end|center|space-between|space-around 
+        Atributos do align-items 
+stretch|center|flex-start|flex-end|baseline */
+
+.item{
+    background: white;
+    width: 100px;
+    height: 100px;
+    border: 1px solid gray;
+    margin: 10px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+}
+/* Flex-Grow = quanto maior o número mais espaço ocupa.
+Flex-Shrink = quanto maior o número menos espaço ele ocupa.
+Isso quando a área útil aumenta ou diminui de tamanho.
+
+Flex-Basis = determina o tamanho inicial do item, ou seja, o tamanho
+que antecede o aumento ou a diminuição do tamanho da área útil onde
+se localiza o item*/
+
+.item1{
+    flex-grow: 1;
+}
+
+.item2{
+    flex-grow: 2;
+}
+
+.ordem1{
+    order: 1;
+}
+
+.ordem2{
+    order: 2;
+}
+
+.ordem3{
+    order: 3;
+}
+
+.ordem4{
+    order: 4;
+}
+
+.ordem{
+    order: -1;
+}
